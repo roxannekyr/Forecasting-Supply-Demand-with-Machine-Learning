@@ -10,7 +10,8 @@ Key Features:
 
 - Automated Aggregation: Converts daily transactional data into monthly time-series data.
 - Feature Engineering: Automatically generates:Lag Features: Lag 1, Lag 2 (Short-term trends).
-- Seasonal Lag: Lag 12 (Year-over-Year seasonality).Rolling Statistics: 3-Month Rolling Mean (Smoothing/Trend detection).
+- Seasonal Lag: Lag 12 (Year-over-Year seasonality).
+- Rolling Statistics: 3-Month Rolling Mean (Smoothing/Trend detection).
 - Recursive Forecasting: Uses a "feedback loop" where the model's prediction for Month t becomes an input feature for Month t+1.
 - Advanced Evaluation Metrics: Calculates industry-standard metrics including MASE (Mean Absolute Scaled Error) and SMAPE (Symmetric Mean Absolute Percentage Error).
 - Business-Ready Reporting: Exports a formatted Excel dashboard with:Raw historical and forecast data.Conditional formatting for performance metrics.Embedded Year-Over-Year seasonality plots.

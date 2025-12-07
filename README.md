@@ -13,7 +13,7 @@ Key Features:
 - Seasonal Lag: Lag 12 (Year-over-Year seasonality).
 - Rolling Statistics: 3-Month Rolling Mean (Smoothing/Trend detection).
 - Recursive Forecasting: Uses a "feedback loop" where the model's prediction for Month t becomes an input feature for Month t+1.
-- Advanced Evaluation Metrics: Calculates industry-standard metrics including MASE (Mean Absolute Scaled Error) and SMAPE (Symmetric Mean Absolute Percentage Error).
+- Advanced Evaluation Metrics: Calculates industry-standard metrics for evaluation.
 - Business-Ready Reporting: Exports a formatted Excel dashboard with:Raw historical and forecast data.Conditional formatting for performance metrics.Embedded Year-Over-Year seasonality plots.
 
 
@@ -44,10 +44,11 @@ Predict Month 2.
 The script evaluates accuracy using a comprehensive suite of metrics:
 
 - MASE	Mean Absolute Scaled Error	
-- SMAPE	Symmetric MAPE	
+- RMSE	Root Mean Squared Error	
 - MAPE	Mean Absolute % Error
 - Bias	Mean Error
-
+- WAPE   (Weighted Accuracy)
+  
 6. Automated export of Forecast vs Year-over-Year Actuals Graph & of Performance Metrics to excel, showing with conditional formatting whether model is good (or not) to use.
    
 <h2>Tools used in this project:</h2>
@@ -61,14 +62,12 @@ The script evaluates accuracy using a comprehensive suite of metrics:
 
 <h2>Insights</h2>
 
-✅ Bias Detection: In the model Mean Forecast Error was tracked to ensure that the model wasn't systematically over-forecasting (bloating inventory) or under-forecasting (causing stock-outs).
+✅ Bias Detection: In the model Mean Forecast Error was tracked to ensure that the model wasn't systematically over-forecasting or under-forecasting . This protects the organization from setting spending targets based on overly optimistic revenue projections (Preventing Cash Flow Risk).
 
-✅ MASE (Mean Absolute Scaled Error): In the model was used MASE to prove that model outperformed the "Naive" baseline. 
-
-✅ SMAPE: Real-world sales data is messy and sometimes have extreme outliers. In the model thus, was used SMAPE, a robust metric designed specifically to handle intermittent demand and keeping the forecasting engine running smoothly 100% of the time, regardless of whether were sold 1,000 units or 0 units.
+✅ MASE (Mean Absolute Scaled Error): In the model was used MASE to prove that model outperformed the "Naive" baseline of the standard 'Last Year Actuals'. 
 
 Top-Down Budget Forecasting vs Actuals Year-Over-Year Graph: <br/>
-<img src="https://i.imgur.com/qIA64VF.png" height="80%" width="80%" alt="Forecasting vs Actuals Year-Over-Year Graph"/>
+<img src="https://i.imgur.com/qIA64VF.png" height="80%" width="80%" alt="Top-Down Budget Forecasting Year-Over-Year Graph"/>
 <br />
 <br />
 

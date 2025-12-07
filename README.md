@@ -1,4 +1,4 @@
-<h1>High Level Demand Forecasting Machine Learning Model</h1>
+<h1>High Level Demand Forecasting ML Model</h1>
 
 <h2>Description</h2>
 

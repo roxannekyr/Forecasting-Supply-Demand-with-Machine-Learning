@@ -9,7 +9,7 @@ Unlike standard statistical models (ARIMA/ETS), this engine treats forecasting a
 Key Features: 
 
 - Automated Aggregation: Converts daily transactional data into monthly time-series data.
-- Feature Engineering: Automatically generates Lag Features: Lag 1, Lag 2 (Short-term trends).
+- Feature Engineering
 - Seasonal Lag: Lag 12 (Year-over-Year seasonality).
 - Rolling Statistics: 3-Month Rolling Mean (Smoothing/Trend detection).
 - Recursive Forecasting: Uses a "feedback loop" where the model's prediction for Month t becomes an input feature for Month t+1.

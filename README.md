@@ -74,6 +74,6 @@ Top-Down Budget Forecasting vs Actuals Year-Over-Year Graph: <br/>
 <br />
 
 Perfomance Metrics: <br/>
-<img src="https://i.imgur.com/wymo6St.png" height="80%" width="80%" alt="Perfomance Metrics"/>
+<img src="https://i.imgur.com/pMSN4pr.png" height="80%" width="80%" alt="Perfomance Metrics"/>
 <br />
 <br />

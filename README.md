@@ -14,7 +14,8 @@ Key Features:
 - Rolling Statistics: 3-Month Rolling Mean (Smoothing/Trend detection).
 - Recursive Forecasting: Uses a "feedback loop" where the model's prediction for Month t becomes an input feature for Month t+1.
 - Advanced Evaluation Metrics: Calculates industry-standard metrics for evaluation.
-- Business-Ready Reporting: Exports a formatted Excel dashboard with:Raw historical and forecast data.Conditional formatting for performance metrics.Embedded Year-Over-Year seasonality plots.
+- Business-Ready Reporting: Exports a formatted Excel dashboard with:Raw historical and forecast data.Conditional formatting for performance metrics.
+- Embedded Year-Over-Year seasonality plots.
 
 
 Methodology & Logic :
@@ -33,11 +34,11 @@ To turn a time-series problem into a supervised learning problem, we create a sh
 
 4. Recursive Forecasting Loop
    
-When predicting the future (where no actual data exists), the system uses its own previous predictions to fill the gaps.
-Predict Month 1.
-Append prediction to history.
-Re-calculate Lags and Rolling Means based on the new history.
-Predict Month 2.
+- When predicting the future (where no actual data exists), the system uses its own previous predictions to fill the gaps.
+- Predict Month 1.
+- Append prediction to history.
+- Re-calculate Lags and Rolling Means based on the new history.
+- Predict Month 2.
 
 5. Performance Metrics
 
@@ -66,7 +67,7 @@ The script evaluates accuracy using a comprehensive suite of metrics:
 
 ✅ MASE (Mean Absolute Scaled Error): In the model was used MASE to prove that model outperformed the "Naive" baseline of the standard 'Last Year Actuals'. 
 
-✅WAPE : In the model was used WAPE to evaluate how model predicts the total volume of business. In our case it is with 85% accuracy, meaning that it successfully captured the main seasonality and trends, leaving only random noise as error.
+✅WAPE : In the model was used WAPE to evaluate how model predicts the total volume of business. In our case the model achieved a WAPE of ~15% (implies ~85% Weighted Accuracy). This indicates that model successfully captured the main seasonality and trends, leaving only random noise as error.
 
 Top-Down Budget Forecasting vs Actuals Year-Over-Year Graph: <br/>
 <img src="https://i.imgur.com/qIA64VF.png" height="80%" width="80%" alt="Top-Down Budget Forecasting Year-Over-Year Graph"/>

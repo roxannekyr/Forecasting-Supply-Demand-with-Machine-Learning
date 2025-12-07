@@ -66,6 +66,8 @@ The script evaluates accuracy using a comprehensive suite of metrics:
 
 ✅ MASE (Mean Absolute Scaled Error): In the model was used MASE to prove that model outperformed the "Naive" baseline of the standard 'Last Year Actuals'. 
 
+✅WAPE : In the model was used WAPE to evaluate how model predicts the total volume of business. In our case it is with 85% accuracy, meaning that it successfully captured the main seasonality and trends, leaving only random noise as error.
+
 Top-Down Budget Forecasting vs Actuals Year-Over-Year Graph: <br/>
 <img src="https://i.imgur.com/qIA64VF.png" height="80%" width="80%" alt="Top-Down Budget Forecasting Year-Over-Year Graph"/>
 <br />

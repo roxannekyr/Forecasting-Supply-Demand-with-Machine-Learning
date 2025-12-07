@@ -48,7 +48,7 @@ The script evaluates accuracy using a comprehensive suite of metrics:
 - RMSE	Root Mean Squared Error	
 - MAPE	Mean Absolute % Error
 - Bias	Mean Error
-- WAPE   (Weighted Accuracy)
+- WAPE   Weighted Absolute % Error
   
 6. Automated export of Forecast vs Year-over-Year Actuals Graph & of Performance Metrics to excel, showing with conditional formatting whether model is good (or not) to use.
    
@@ -65,9 +65,9 @@ The script evaluates accuracy using a comprehensive suite of metrics:
 
 ✅ Bias Detection: In the model Mean Forecast Error was tracked to ensure that the model wasn't systematically over-forecasting or under-forecasting . This protects the organization from setting spending targets based on overly optimistic revenue projections (Preventing Cash Flow Risk).
 
-✅ MASE (Mean Absolute Scaled Error): In the model was used MASE to prove that model outperformed the "Naive" baseline of the standard 'Last Year Actuals'. 
+✅ MASE: In the model was used Mean Absolute Scaled Error to prove that model outperformed the "Naive" baseline of the standard 'Last Year Actuals'. 
 
-✅WAPE : In the model was used WAPE to evaluate how model predicts the total volume of business. In our case the model achieved a WAPE of ~15% (implies ~85% Weighted Accuracy). This indicates that model successfully captured the main seasonality and trends, leaving only random noise as error.
+✅WAPE: In the model was used Weighted Absolute % Error to evaluate how model predicts the total volume of business. In our case the model achieved a WAPE of ~15% (implies ~85% Weighted Accuracy). This indicates that model successfully captured the main seasonality and trends, leaving only random noise as error.
 
 Top-Down Budget Forecasting vs Actuals Year-Over-Year Graph: <br/>
 <img src="https://i.imgur.com/qIA64VF.png" height="80%" width="80%" alt="Top-Down Budget Forecasting Year-Over-Year Graph"/>

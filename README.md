@@ -8,7 +8,7 @@ Unlike standard statistical models (ARIMA/ETS), this engine treats forecasting a
 
 Key Features: 
 
-- Automated Aggregation: Converts daily transactional data into monthly time-series data.
+- Automated Aggregation: Converts daily transactional data into monthly time-series data as a bucket for all skus.
 - Feature Engineering
 - Seasonal Lag: Lag 12 (Year-over-Year seasonality).
 - Rolling Statistics: 3-Month Rolling Mean (Smoothing/Trend detection).
